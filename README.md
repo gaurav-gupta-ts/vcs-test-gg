@@ -1,2 +1,2 @@
 # vcs-test-gg
-main edit for conflict
+target edit for conflict
