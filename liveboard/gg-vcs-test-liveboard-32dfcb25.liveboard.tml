@@ -1,0 +1,57 @@
+obj_id: gg-vcs-test-liveboard-32dfcb25
+liveboard:
+  name: gg-vcs-test-liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: gg-Total sales by Monthly date
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+      search_query: "[sales] by [date].month"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_LINE
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"d113e4d5-69a0-4b83-806b-0432822c25ff\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"431ab950-aa1e-4f4d-9d00-6a1ee426fdb0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Month(date)
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total sales
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{\"chartSettingsVersion\":\"1\"}"
+        viz_style: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: gg-Total sales by Monthly date
+    viz_guid: feb1e05e-ba63-4270-9ba3-d36dd4e6d1cb
+  layout:
+    tiles:
+    - visualization_id: Viz_1
