@@ -51,7 +51,7 @@ liveboard:
         viz_style: "{}"
       display_mode: CHART_MODE
       dynamic_name: gg-Total sales by Monthly date
-    viz_guid: feb1e05e-ba63-4270-9ba3-d36dd4e6d1cb
+    viz_guid: c197fc34-9434-48d7-b070-ceb3073a2a7d
   layout:
     tiles:
     - visualization_id: Viz_1
